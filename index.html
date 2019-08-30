@@ -31,7 +31,8 @@
             <a href="https://drive.google.com/open?id=1PsLbfpY5ghz98QgLBS5OuRu3GfIFZmny"
                 class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Resume</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i>
+                <!-- <i class="fa fa-search"></i> -->
+                { ... }
             </a>
         </div>
 
@@ -39,64 +40,73 @@
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button" ">CONTACT</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
             <a href=" https://drive.google.com/open?id=1PsLbfpY5ghz98QgLBS5OuRu3GfIFZmny" class="w3-bar-item w3-button"
                 onclick="toggleFunction()">RESUME</a>
-            <a href="#home" class="w3-bar-item w3-button">SEARCH</a>
+            <!-- <a href="#home" class="w3-bar-item w3-button">SEARCH</a> -->
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="bgimg-1 w3-display-container w3-opacity-min " id="home">
         <div class="w3-display-middle w3-section">
-            <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">
+            <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide page-title w3-hide-small">
                 { developer: true }
             </span>
-
         </div>
-        <div class="w3-container w3-display-bottommiddle buttons">
+        <div class="w3-container w3-display-bottommiddle buttons w3-center">
 
-            <button class="w3-btn w3-black w3-border"><span><a href="./index.html#portfolio">Portfolio</a></span>
-            </button>
+            <a href="./index.html#portfolio" class="w3-btn w3-black w3-border w3-hover-sepia button">Portfolio</a>
             <a href="https://drive.google.com/open?id=1PsLbfpY5ghz98QgLBS5OuRu3GfIFZmny"
-                class="w3-btn w3-black w3-border">Resume</a>
+                class="w3-btn w3-black w3-border w3-hover-sepia button">Resume</a>
         </div>
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love creating things</em></p>
-        <p>I am a front-end web developer from Salt Lake City, Utah. I am passionate in seeking knowledge and expanding
-            my repertoire. I have always used creativity to express myself in everything I do. I take great satisfaction
-            in a job well done. Nothing feels better than creating a project that looks fabtastic. My favorite part of
-            designing a project is adding subtleties and flourishes to make the project stand out</p>
+        <p class="w3-center"><em>I love to create</em></p>
+        <p>I am a front-end web developer from Salt Lake City, Utah who is passionate about seeking knowledge and
+            expanding
+            my repertoire. I have always relied on creativity to express myself in everything I do. Few things feel more
+            rewarding than creating a project that looks fantastic. I am excited to learn new technologies and create
+            projects that I can be proud of.</p>
+        <p class=""><strong>Languages</strong></p>
+        <p>HTML5, CSS3, JavaScript, Node.js, NoSQL, Git, CLI</p>
+        <p class=""><strong>Libraries/Frameworks</strong></p>
+        <p>Bootstrap, Uikit, W3.CSS, jQuery, moment.js, React, Express, Firebase, MongoDB</p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>Gerritt Black</b></p><br>
-                <img src="./assets/images/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                <img src="./assets/images/profile.jpg" class="w3-round w3-image w3-opacity-min w3-hover-opacity-off"
                     alt="Photo of Me" width="500" height="333">
             </div>
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>featured projects</p>
+                <h3 class="w3-center w3-wide"><strong>Featured Projects</strong></h3>
                 <div class="w3-container">
 
                     <div class="w3-card-4 card w3-margin">
-                        <img src="./assets/images/psychic.jpg" class="card-image">
                         <div class="w3-container w3-center">
-                            <p>Psychic Game</p>
+                            <h4 class="card-title">Psychic Game</h4>
                             <p>Created with HTML, CSS, and Javascript</p>
-                            <p>press a key to guess a letter. guess right before running out of guesses</p>
+                            <p>press a key to guess the correct letter. guess the correct letter before running out of
+                                guesses</p>
                         </div>
                     </div>
                     <div class="w3-card-4 card w3-margin">
-                        <img src="./assets/images/freetime.jpg" class="card-image">
                         <div class="w3-container w3-center">
-                            <p>FreeTime App</p>
-                            <p>Created with HTML, CSS, Javascript, firebase</p>
+                            <h4 class="card-title">FreeTime App</h4>
+                            <p>Created with HTML, CSS, uikit, Javascript, jQuery, moment.js, firebase</p>
                             <p>Create an event and find a time that works best for EVERYONE</p>
+                        </div>
+                    </div>
+                    <div class="w3-card-4 card w3-margin">
+                        <div class="w3-container w3-center">
+                            <h4 class="card-title">Star War</h4>
+                            <p>Created with HTML, CSS, Javascript, jQuery</p>
+                            <p>An RPG game wher eyou pit the stars against one another</p>
                         </div>
                     </div>
 
@@ -124,7 +134,7 @@
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/psychic.jpg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity"
                     alt="Psychic Game. Guess the letter the computer has chosen before you run out of lives.">
@@ -134,14 +144,14 @@
 
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/starwar.jpg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="Star War. An RPG game that pits the stars against one another">
                 <button class="w3-btn w3-black" style="width: 100%"><span><a
                             href="https://gmocore.github.io/unit-4-game/" target="_blank">Star War</a></span></button>
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/trivia.jpg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="Film Slob Trivia. A trivia game about film.">
                 <button class="w3-btn w3-black" style="width: 100%"><span><a
@@ -149,7 +159,7 @@
                             Trivia</a></span></button>
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/gif-generator.png" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="Gif Generator using Giphy API">
                 <button class="w3-btn w3-black" style="width: 100%"><span><a
@@ -159,7 +169,7 @@
         </div>
 
         <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/train.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Train Scheduling App using moment.js">
                 <button class="w3-btn w3-black" style="width: 100%"><span><a
@@ -167,7 +177,7 @@
                             Train</a></span></button>
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/freetimefull.jpg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity"
                     alt="FreeTime App. Create an event and find a time that works best for EVERYONE.Technology used: HTML, CSS, Uikit, JavaScript, jQuery Firebase, Moment.js">
@@ -175,7 +185,7 @@
                             href="https://mexcelus.github.io/freetime-app/" target="_blank">FreeTime</a></span></button>
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/crystals.jpg" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity"
                     alt="Click crystals to match target score. Each crystal is assigned a random value for each game. TECHNOLOGY: HTML, CSS, JavaScript">
@@ -184,14 +194,14 @@
                             Collector</a></span></button>
             </div>
 
-            <div class="w3-col m3">
+            <div class="w3-col m3 portfolio-card">
                 <img src="./assets/images/boxes.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
                     alt="Hover mouse over page to genrate randomly colored boxes. TECHNOLOGY: HTML, CSS, JavaScript">
                 <button class="w3-btn w3-black" style="width: 100%"><span><a href="https://colorful-boxes.netlify.com/"
                             target="_blank">Colorful
                             Boxes</a></span></button>
             </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+
         </div>
     </div>
 
@@ -208,7 +218,7 @@
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
         </div>
     </div>
 
@@ -232,7 +242,7 @@
                     <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Github:
                     <a href="https://github.com/gmocore">github.com/gmocore</a>
                 </div>
-                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <p><i class="fa fa-coffee"></i> Get in touch:</p>
                 <form action="/action_page.php" target="_blank">
                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="w3-half">
@@ -267,37 +277,8 @@
                 class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
 
-        // Change style of navbar on scroll
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        }
-
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

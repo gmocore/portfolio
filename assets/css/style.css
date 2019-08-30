@@ -47,8 +47,9 @@ html {
 }
 
 /* Third image (Contact) */
+
 .bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
+  background-image: url("../images/contact.jpg");
   min-height: 400px;
 }
 
@@ -64,26 +65,42 @@ html {
   color: white;
 }
 
-.card {
-  height: 300px;
-  width: 400px;
+.card-title {
+  font-weight: bold;
 }
 
-.card-image {
-  height: 150px;
-  width: 100%;
+#portfolio {
+  min-height: 100vh;
 }
 
 #about {
   min-height: 100vh;
 }
 
+#contact {
+  min-height: 80vh;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-device-width: 900px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-card {
+    margin: 10px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 10px;
   }
 }
