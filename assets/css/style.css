@@ -81,6 +81,10 @@ html {
   min-height: 80vh;
 }
 
+.small-dev {
+  display: none;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 900px) {
   .bgimg-1,
