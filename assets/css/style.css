@@ -73,6 +73,10 @@ html {
   min-height: 100vh;
 }
 
+.portfolio-card {
+  margin-top: 5px;
+}
+
 #about {
   min-height: 100vh;
 }
