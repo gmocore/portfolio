@@ -65,6 +65,13 @@ html {
   color: white;
 }
 
+.name {
+  color: white;
+  font-size: 5em;
+  letter-spacing: 4px;
+  border: 1px solid white;
+}
+
 .card-title {
   font-weight: bold;
 }
