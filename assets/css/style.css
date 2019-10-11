@@ -80,6 +80,11 @@ html {
   min-height: 100vh;
 }
 
+.w3-dark-gray {
+  width: 100%;
+  padding: 0.1em;
+}
+
 .portfolio-card {
   margin-top: 5px;
 }
